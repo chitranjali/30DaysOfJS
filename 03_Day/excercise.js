@@ -40,3 +40,4 @@ function coordinate(x, y) {
 m = (coordinates[1].y - coordinates[0].y) / (coordinates[1].x - coordinates[0].x)
 console.log(m);
 
+
