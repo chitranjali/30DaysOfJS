@@ -19,3 +19,18 @@ function cube(callback, n) {
 ​
 console.log(cube(callback, 3))
 ```
+
+https://stackoverflow.com/questions/175739/built-in-way-in-javascript-to-check-if-a-string-is-a-valid-number
+
+### Empty strings
+* Empty strings may be a little counter-intuitive. 
+* +num converts empty strings or strings with spaces to zero, and isNaN() assumes the same:
+
+```js
++''                // 0
++'   '             // 0
+isNaN('')          // false
+isNaN('   ')       // false
+```
+
+* Note that the order in which you load the script files is significant for some browsers
